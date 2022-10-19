@@ -1,8 +1,13 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +15,313 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  max-width: 1200px;
+  /* background-color: #FFDEF7; */
+  margin: 0 auto;
+}
+
+/* HEADER */
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #F0F0F0;
+  margin-bottom: 6rem;
+  /* box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%); */
+  align-items: center;
+}
+
+nav a {
+  color: #3B3B3B;
+  text-decoration: none;
+  padding-left: 1.5rem;
+  font-weight: 600;
+  transition: .3s;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #36AAFF;
+}
+
+.logo {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* HOME heroe*/
+.heroe {
+  display: flex;
+  width: 100%;
+  margin-bottom: 6rem;
+  align-items: center;
+}
+
+.heroe-text {
+  width: 100%;
+}
+
+.heroe-text h1 {
+  /* background-color: #54B6FF; */
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 72px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+/* HOME surgery - stats*/
+
+.surgery-header {
+  padding: 1rem 0;
+  /* background-color: aquamarine; */
+  text-align: center;
+}
+
+.surgery-header h2 {
+  /* color: #001219; */
+}
+
+.stats-container {
+  padding: 1.5rem 0;
+  display: flex;
+  text-align: center;
+  /* background-color: #FAFAFA; */
+  justify-content: space-around;
+}
+
+.stats-container p {
+  color: #4a4e69;
+}
+
+.stats-container h4 {
+  margin-bottom: .5rem;
+  color: #001219;
+  /* color: red; */
+}
+
+.stats-plan h4 {
+  color: #4EE29B;
+}
+
+.stats-extra h4 {
+  color: #FF5A5A;
+}
+
+.stats-ep h4 {
+  color: #59A1FF;
+}
+
+/* FORM */
+.formContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #F5F5F5;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.formLine {
+/* background-color: #BDFBFF; */
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.formBtn {
+  width: 100%;
+  padding: .6rem 0;
+  border-radius: 6px;
+  font-size: .9rem;
+  border: none;
+  background-color: #36AAFF;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #F5F5F5;
+  transition: .5s;
+}
+
+.formBtn:hover {
+  background-color: #54B6FF;
+  
+}
+
+.home,
+.surgery {
+  padding: 0 1rem;
+}
+
+/* createPage */
+footer p {
+  text-align: center;
+}
+
+.derwa-e {
+  font-weight: 700;
+}
+
+.createPage h3 {
+  text-align: center;
+}
+
+input[type=text],
+input[type=date],
+textarea {
+  width: 100%;
+  padding: .5rem;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  margin-bottom: 1.5rem;
+}
+
+input[type=checkbox] {
+  margin-left: .5rem;
+}
+
+select {
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+}
+
+select:focus {
+  outline: none;
+}
+
+textarea {
+  min-height: 150px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+  /* background-color: red; */
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* ####### SURGERY UI, CARD STYLES ######### */
+.divider {
+  width: 25px;
+  height: 2px;
+  background-color: #AED6F1;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 15px 15px 40px rgb(0 0 0 / 8%);
+  border: 1px solid hsla(0,0%,79.6%,.7);
+  border-radius: 6px;
+}
+
+.opContent {
+  margin: 1.1rem 0 1.5rem 0;
+}
+
+.opDiagnosis {
+  margin-bottom: .5rem;
+}
+
+.opDate p {
+  font-size: .7rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+  color: #898989;
+}
+
+.opFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.endoprotezas p,
+.skuba p {
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.endoprotezas p {
+  color: #59A1FF;
+}
+
+.surgCounter {
+  width: 40px;
+  height: 40px;
+  color: red;
+  background-color: pink;
+  display: inline-block;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.surgCounter p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.login-header {
+  width: 100%;
+  text-align: center;
+}
+
+.login-header p {
+  margin-bottom: 1rem;
+}
+
+.loginBtn {
+  padding: 8px 16px;
+  background: none;
+  border: 1px solid #949494;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #323232;
+}
+
+.logOutBtn {
+  margin-left: 25px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+  border: 1px solid #898989;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.logOutBtn:hover {
+  background-color: #d3d3d3;
+}
+
+@media screen and (max-width: 600px) {
+  .heroe-text h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heroe-text h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
 }
